@@ -9,14 +9,8 @@ body * {
 }
 
 body {
-	--background: #1e1e1e;
-	--border: #454545;
-	--bright-blue: #4fc1ff;
-	--cyan: #4ec9b0;
-	--light-blue: #9cdcfe;
-
 	align-items: center;
-	background-color: var(--background);
+	background-color: #1e1e1e;
 	color: white;
 	display: flex;
 	font-size: 14px;
@@ -53,7 +47,7 @@ body {
 .row {
 	align-items: center;
 	background-color: #333333;
-	border: solid 1px var(--border);
+	border: solid 1px #454545;
 	border-radius: 5px;
 	display: flex;
 	gap: 1rem;
@@ -63,7 +57,7 @@ body {
 }
 
 .row > .category > .name {
-	color: var(--bright-blue);
+	color: #4fc1ff;
 	font-size: 1.15rem;
 }
 
@@ -75,10 +69,10 @@ body {
 
 .row > .input {
 	aspect-ratio: 1 / 1;
-	background-color: var(--border);
+	background-color: #454545;
 	border: none;
 	border-radius: 5px;
-	color: var(--light-blue);
+	color: #9cdcfe;
 	font-family: monospace;
 	font-size: 1rem;
 	outline: none;;
@@ -87,7 +81,7 @@ body {
 }
 
 .row:has(#result) {
-	border-color: var(--cyan);
+	border-color: #4ec9b0;
 	margin-top: 1.25rem;
 }
 
