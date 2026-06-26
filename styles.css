@@ -75,11 +75,13 @@ body {
 
 .row > .input {
 	aspect-ratio: 1 / 1;
-	background-color: transparent;
-	/* border-radius: 5px; */
+	background-color: var(--border);
+	border: none;
+	border-radius: 5px;
 	color: var(--light-blue);
 	font-family: monospace;
 	font-size: 1rem;
+	outline: none;;
 	text-align: center;
 	width: 2rem;
 }
@@ -91,4 +93,5 @@ body {
 
 #result {
 	font-size: 1.15rem;
+	font-weight: bold;
 }
