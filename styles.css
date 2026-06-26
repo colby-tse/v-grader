@@ -1,0 +1,94 @@
+/**
+ * Description: Styling for v-grader.
+ * Author: Colby Tse
+ * Date created: 26-06-2026
+ */
+
+body * {
+	/* border: solid 1px red; */
+}
+
+body {
+	--background: #1e1e1e;
+	--border: #454545;
+	--bright-blue: #4fc1ff;
+	--cyan: #4ec9b0;
+	--light-blue: #9cdcfe;
+
+	align-items: center;
+	background-color: var(--background);
+	color: white;
+	display: flex;
+	font-size: 14px;
+	font-family: monospace;
+	flex-direction: column;
+	justify-content: center;
+	margin: 2rem 1rem;
+	user-select: none;
+}
+
+.title, .subtitle {
+	text-align: center;
+}
+
+.title {
+	font-size: 2rem;
+	font-weight: bold;
+	letter-spacing: 0.15rem;
+}
+
+.subtitle {
+	font-size: 1rem;
+	letter-spacing: 0.05rem;
+	margin-top: 1rem;
+}
+
+.calc {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	margin-top: 2rem;
+}
+
+.row {
+	align-items: center;
+	background-color: #333333;
+	border: solid 1px var(--border);
+	border-radius: 5px;
+	display: flex;
+	gap: 1rem;
+	justify-content: space-between;
+	padding: 1rem;
+	max-width: 420px;
+}
+
+.row > .category > .name {
+	color: var(--bright-blue);
+	font-size: 1.15rem;
+}
+
+.row > .category > .desc {
+	color: lightgray;
+	font-size: 0.75rem;
+	margin-top: 0.15rem;
+}
+
+.row > .input {
+	aspect-ratio: 1 / 1;
+	background-color: transparent;
+	/* border-radius: 5px; */
+	color: var(--light-blue);
+	font-family: monospace;
+	font-size: 1rem;
+	text-align: center;
+	width: 2rem;
+}
+
+.row:has(#result) {
+	border-color: var(--cyan);
+	margin-top: 1.25rem;
+}
+
+#result {
+	font-size: 1.15rem;
+}

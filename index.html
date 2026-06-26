@@ -1,0 +1,106 @@
+<!--
+	Description: Content for v-grader.
+	Author: Colby Tse
+	Date created: 26-06-2026
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>v-grader</title>
+	<link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+	<div class="title">v-grader</div>
+	<div class="subtitle">A simple bouldering v-grade calculator</div>
+
+	<div class="calc">
+		<div class="row">
+			<div class="category">
+				<div class="name">Strength</div>
+				<div class="desc">How much raw force is required</div>
+			</div>
+
+			<input id="strength" class="input" type="text" oninput="validateInput(this)">
+		</div>
+
+		<div class="row">
+			<div class="category">
+				<div class="name">Power</div>
+				<div class="desc">How much maximum explosive force is needed</div>
+			</div>
+
+			<input id="power" class="input" type="text" oninput="validateInput(this)">
+		</div>
+
+		<div class="row">
+			<div class="category">
+				<div class="name">Endurance</div>
+				<div class="desc">How much endurance is needed</div>
+			</div>
+
+			<input id="endurance" class="input" type="text" oninput="validateInput(this)">
+		</div>
+
+		<div class="row">
+			<div class="category">
+				<div class="name">Core Strength/Body Tension</div>
+				<div class="desc">How hard is it to keep feet on?</div>
+			</div>
+
+			<input id="core" class="input" type="text" oninput="validateInput(this)">
+		</div>
+
+		<div class="row">
+			<div class="category">
+				<div class="name">Footwork Precision</div>
+				<div class="desc">How accurately feet must be placed?</div>
+			</div>
+
+			<input id="footwork" class="input" type="text" oninput="validateInput(this)">
+		</div>
+
+		<div class="row">
+			<div class="category">
+				<div class="name">Balance</div>
+				<div class="desc">How hard is it to stay on the wall?</div>
+			</div>
+
+			<input id="balance" class="input" type="text" oninput="validateInput(this)">
+		</div>
+
+		<div class="row">
+			<div class="category">
+				<div class="name">Body Positioning</div>
+				<div class="desc">How complex are the required positions?</div>
+			</div>
+
+			<input id="body-pos" class="input" type="text" oninput="validateInput(this)">
+		</div>
+
+		<div class="row">
+			<div class="category">
+				<div class="name">Coordination</div>
+				<div class="desc">How simultaneous are the movements?</div>
+			</div>
+
+			<input id="" class="input" type="text" oninput="validateInput(this)">
+		</div>
+
+		<div class="row">
+			<div class="category">
+				<div class="name">Result</div>
+			</div>
+
+			<div id="result">v0</div>
+		</div>
+	</div>
+</body>
+
+<script src="./script.js"></script>
+
+</html>
