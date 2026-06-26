@@ -2,6 +2,9 @@
   <img src="docs/masthead.png" alt="v-grader">
 </p>
 
+![Version](https://img.shields.io/badge/version-1.0.0-green)
+[![Launch App](https://img.shields.io/badge/Launch%20App-blue)](https://colby-tse.github.io/v-grader/)
+
 ## About
 The main limitation of the V-grading system is that it is inherently relative rather than objective: grades are assigned by comparing new problems to existing “benchmark” climbs rather than measuring difficulty against any fixed, universal standard. As a result, we run into the conceptual problem of “grade inflation” or an endless ladder of increasing difficulty. Rather than defining new higher grades, the benchmark itself should be reassessed and potentially downgraded.
 
