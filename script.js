@@ -51,4 +51,10 @@ function validateInput(input) {
 	input.value = value;
 }
 
+function reset() {
+	document.querySelectorAll('.input').forEach(input => {
+		input.value = '';
+	});
+}
+
 main();

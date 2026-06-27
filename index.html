@@ -11,12 +11,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>v-grader</title>
+	<link rel="icon" type="image/png" href="./docs/favicon.png">
 	<link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
 	<div class="title">v-grader</div>
 	<div class="subtitle">A simple bouldering v-grade calculator</div>
+
+
 
 	<div class="calc">
 		<div class="row">
@@ -91,10 +94,8 @@
 			<input id="" class="input" type="text" inputmode="numeric" oninput="validateInput(this)">
 		</div>
 
-		<div class="row">
-			<div class="category">
-				<div class="name">Result</div>
-			</div>
+		<div class="hotbar">
+			<button id="reset" onclick="reset()">Reset</button>
 
 			<div id="result">v0</div>
 		</div>
