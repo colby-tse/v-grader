@@ -55,6 +55,8 @@ function reset() {
 	document.querySelectorAll('.input').forEach(input => {
 		input.value = '';
 	});
+
+	document.getElementById('result').textContent = '';
 }
 
 main();
