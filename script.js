@@ -57,6 +57,8 @@ function reset() {
 	});
 
 	document.getElementById('result').textContent = '';
+
+	window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 main();

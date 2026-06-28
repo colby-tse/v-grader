@@ -11,16 +11,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>v-grader</title>
-	<link rel="icon" type="image/png" href="./docs/favicon.png">
-	<link rel="apple-touch-icon" href="./docs/favicon.png">
 	<link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
 	<div class="title">v-grader</div>
 	<div class="subtitle">A simple bouldering v-grade calculator</div>
-
-
 
 	<div class="calc">
 		<div class="row">
@@ -61,15 +57,6 @@
 
 		<div class="row">
 			<div class="category">
-				<div class="name">Footwork Precision</div>
-				<div class="desc">How accurately feet must be placed?</div>
-			</div>
-
-			<input id="footwork" class="input" type="text" inputmode="numeric" oninput="validateInput(this)">
-		</div>
-
-		<div class="row">
-			<div class="category">
 				<div class="name">Balance</div>
 				<div class="desc">How hard is it to stay on the wall?</div>
 			</div>
@@ -88,14 +75,14 @@
 
 		<div class="row">
 			<div class="category">
-				<div class="name">Coordination</div>
-				<div class="desc">How simultaneous are the movements?</div>
+				<div class="name">Precision</div>
+				<div class="desc">How precisely must you execute the movements?</div>
 			</div>
 
-			<input id="" class="input" type="text" inputmode="numeric" oninput="validateInput(this)">
+			<input id="precision" class="input" type="text" inputmode="numeric" oninput="validateInput(this)">
 		</div>
 
-		<div class="hotbar">
+		<div class="row">
 			<button id="reset" onclick="reset()">Reset</button>
 
 			<div id="result"></div>

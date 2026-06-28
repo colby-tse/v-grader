@@ -85,15 +85,8 @@ body {
 	background-color: #525252;
 }
 
-.hotbar {
-	align-items: center;
-	background-color: #333333;
+.row:has(#result) {
 	border: solid 1px #4ec9b0;
-	border-radius: 5px;
-	display: flex;
-	justify-content: space-between;
-	max-width: 420px;
-	padding: 1rem;
 }
 
 #reset {
