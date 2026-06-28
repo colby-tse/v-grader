@@ -9,10 +9,17 @@ function main() {
 	
 	inputs.forEach(input => {
 		input.addEventListener('input', function () {
+			let isValueEntered = false;
 			let temp = 0;
 			inputs.forEach(input => {
+				if (input.value !== '') isValueEntered = true;
 				temp += Number(input.value);
 			});
+
+			if (!isValueEntered) {
+				document.getElementById('result').textContent = '';
+				return;
+			}
 
 			let grade = temp / inputs.length;
 
